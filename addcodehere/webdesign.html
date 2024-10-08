@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - Connect with Friends</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Gold color on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .description, .features, .about, .contact {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .description img, .features img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ChatApp</h1>
+        <p>Your simple chatting solution</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="description" id="home">
+            <img src="https://via.placeholder.com/600x300.png?text=ChatApp+Interface" alt="ChatApp Interface">
+            <h2>Connect with Anyone, Anytime!</h2>
+            <p>Chat with friends, family, or anyone across the globe. Our app is user-friendly and secure, ensuring your messages are safe.</p>
+            <button id="get-started-btn">Get Started</button>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Real-Time Messaging:</strong> Send and receive messages instantly.</li>
+                <li><strong>Group Chats:</strong> Create groups and chat with multiple friends.</li>
+                <li><strong>Media Sharing:</strong> Share images, videos, and files effortlessly.</li>
+                <li><strong>End-to-End Encryption:</strong> Your conversations are secure and private.</li>
+            </ul>
+            <img src="https://via.placeholder.com/600x300.png?text=Features+Screenshot" alt="Features Screenshot">
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>ChatApp is designed with simplicity in mind. Our mission is to connect people effortlessly, enabling seamless communication no matter where you are in the world.</p>
+            <p>Founded in 2024, we prioritize user experience and security, making sure that every chat is private and protected. Join us and stay connected!</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or need support, feel free to reach out to us!</p>
+            <p>Email: support@chatapp.com</p>
+            <p>Follow us on social media for updates and news.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ChatApp. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("get-started-btn").addEventListener("click", function() {
+            alert("Welcome to ChatApp! Let’s get started!");
+            
+        });
+    </script>
+</body>
+</html>
